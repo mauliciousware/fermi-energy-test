@@ -1,20 +1,12 @@
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Layout from '@theme/Layout';
-import Heading from '@theme/Heading';
-
-import styles from './index.module.css';
-import HeroHome from '../components/hero-home';
-import FeaturesHome from '../components/features-home';
-import AboutMe from '../components/about-me';
-import Cta from '../components/cta';
+import Layout from "@theme/Layout";
+import HeroHome from "../components/hero-home";
+import FeaturesHome from "../components/features-home";
+import AboutMe from "../components/about-me";
+import Cta from "../components/cta";
 
 export default function Home(): JSX.Element {
   return (
-    <Layout
-      title="Home"
-      description="Helping developers become founders">
+    <Layout title="Home" description="The World's Most Transparent Dev Agnecy">
       <HeroHome />
       <FeaturesHome />
       <AboutMe />
