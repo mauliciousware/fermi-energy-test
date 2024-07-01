@@ -22,13 +22,13 @@ const people = [
 
 export default function MeetFounders() {
   return (
-    <div className="bg-white py-24 md:py-32">
+    <div className="py-24 md:py-32">
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-5">
         <div className="max-w-2xl xl:col-span-2">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
             Meet the founders
           </h2>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
+          <p className="mt-6 text-lg leading-8 text-gray-300">
             We’re a dynamic group of individuals who are passionate about what
             we do and dedicated to delivering the best results for our clients.
           </p>
@@ -48,20 +48,20 @@ export default function MeetFounders() {
                 alt=""
               />
               <div className="max-w-xl flex-auto">
-                <h3 className="text-lg font-semibold leading-8 tracking-tight text-gray-900">
+                <h3 className="text-lg font-semibold leading-8 tracking-tight text-white">
                   {person.name}
                 </h3>
-                <p className="text-base leading-7 text-gray-600">
+                <p className="text-base leading-7 text-primary opacity-80">
                   {person.role}
                 </p>
-                <p className="mt-6 text-base leading-7 text-gray-600">
+                <p className="mt-6 text-base leading-7 text-gray-300">
                   {person.bio}
                 </p>
                 <div role="list" className="mt-6 flex gap-x-6">
                   <div>
                     <a
                       href={person.xUrl}
-                      className="text-gray-400 hover:text-gray-500"
+                      className="text-gray-200 hover:text-primary"
                     >
                       <span className="sr-only">X</span>
                       <svg
@@ -77,7 +77,7 @@ export default function MeetFounders() {
                   <div>
                     <a
                       href={person.linkedinUrl}
-                      className="text-gray-400 hover:text-gray-500"
+                      className="text-gray-200 hover:text-primary"
                     >
                       <span className="sr-only">LinkedIn</span>
                       <svg

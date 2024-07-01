@@ -101,12 +101,12 @@ export default function Pricing() {
               </a>
               <div
                 role="list"
-                className="mt-8 space-y-3 text-sm leading-6 text-gray-300 xl:mt-10"
+                className="mt-8 space-y-3 text-sm leading-6 text-gray-100 xl:mt-10"
               >
                 {tier.features.map((feature) => (
                   <div key={feature} className="flex gap-x-3">
                     <CheckIcon
-                      className="h-6 w-5 flex-none text-white"
+                      className="h-6 w-5 flex-none text-green-700"
                       aria-hidden="true"
                     />
                     {feature}
