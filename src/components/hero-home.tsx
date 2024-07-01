@@ -1,58 +1,53 @@
 export default function HeroHome() {
   return (
-    <section className="relative overflow-hidden">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        {/* Hero content */}
-        <div className="pt-32 pb-12 md:pt-40 md:pb-20">
-          {/* Section header */}
-          <div className="text-center pb-12 md:pb-16">
-            <h1
-              className="font-wood text-7xl md:text-8xl font-extrabold tracking-wide leading-tighter mb-4"
-              data-aos="zoom-y-out"
+    <section className="relative isolate pt-14">
+      <div
+        className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+        aria-hidden="true"
+      >
+        <div
+          className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-primary opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+          style={{
+            clipPath:
+              "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
+          }}
+        />
+      </div>
+      <div className="mx-auto max-w-3xl py-32 sm:py-48 lg:py-56">
+        <div className="text-center">
+          <h1 className="text-5xl font-bold tracking-tight text-white md:text-6xl lg:text-7xl">
+            The World's Most{" "}
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary">
+              Transparent Dev Agency
+            </span>
+          </h1>
+          <p className="mt-6 text-lg leading-8 text-gray-300">
+            Our templated code and processes are available for free and{" "}
+            <span className="text-primary">
+              trusted by hundreds of developers
+            </span>
+          </p>
+          <div className="mt-10 flex items-center justify-center gap-x-6">
+            <a
+              href="#"
+              className="rounded-md bg-primary px-4 py-3 text-md font-semibold text-black shadow-sm hover:bg-primary/80 hover:text-black hover:no-underline"
             >
-              The World's Most
-              <br />
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary">
-                Transparent Dev Agency
-              </span>{" "}
-            </h1>
-            <div className="max-w-3xl mx-auto">
-              <p
-                className="font-mont text-xl text-white mb-8"
-                data-aos="zoom-y-out"
-                data-aos-delay="150"
-              >
-                Our templated code and processes are{" "}
-                <span className="font-semibold text-primary">
-                  trusted by hundreds of developers,
-                </span>{" "}
-                ensuring we build solutions that serve you
-              </p>
-              <div
-                className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center font-body gap-4"
-                data-aos="zoom-y-out"
-                data-aos-delay="300"
-              >
-                <div>
-                  <a
-                    className="btn text-black bg-primary hover:bg-black hover:text-white w-full mb-4 sm:w-auto sm:mb-0 hover:no-underline"
-                    href="#0"
-                  >
-                    Book a Call
-                  </a>
-                </div>
-                <div>
-                  <a
-                    className="btn text-white bg-[#343434] hover:bg-black hover:text-white w-full mb-4 sm:w-auto sm:mb-0 hover:no-underline"
-                    href="/docs"
-                  >
-                    Read Docs
-                  </a>
-                </div>
-              </div>
-            </div>
+              See Our Process
+            </a>
           </div>
         </div>
+      </div>
+      <div
+        className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+        aria-hidden="true"
+      >
+        <div
+          className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ffca28] opacity-20 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+          style={{
+            clipPath:
+              "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
+          }}
+        />
       </div>
     </section>
   );

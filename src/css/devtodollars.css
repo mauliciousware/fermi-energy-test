@@ -5,14 +5,15 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url('../../static/fonts/WoodHeinzNo2-New.ttf') format('opentype');
+    src: url("../../static/fonts/WoodHeinzNo2-New.ttf") format("opentype");
   }
   @font-face {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url('../../static/fonts/Montserrat-VariableFont_wght.ttf') format('opentype');
+    src: url("../../static/fonts/Montserrat-VariableFont_wght.ttf")
+      format("opentype");
   }
 }
 .navbar__title {
@@ -22,7 +23,7 @@
 
 /* Github link */
 .header-github-link::before {
-  content: '';
+  content: "";
   width: 24px;
   height: 24px;
   display: flex;
@@ -37,7 +38,7 @@
 }
 
 .header-discord-link::before {
-  content: '';
+  content: "";
   width: 24px;
   height: 24px;
   display: flex;
@@ -51,16 +52,21 @@
   background-color: var(--ifm-navbar-link-hover-color);
 }
 
+.footer {
+  border-top: 1px solid var(--ifm-toc-border-color);
+  background-color: var(--ifm-background-color);
+}
+
 /* Tailwind Classes */
 .btn,
 .btn-sm {
-    @apply font-medium inline-flex items-center justify-center border border-transparent rounded-xl leading-snug transition duration-150 ease-in-out;
+  @apply font-medium inline-flex items-center justify-center border border-transparent rounded-xl leading-snug transition duration-150 ease-in-out;
 }
 
 .btn {
-    @apply px-8 py-3 shadow-lg;
+  @apply px-8 py-3 shadow-lg;
 }
 
 .btn-sm {
-    @apply px-4 py-2 shadow;
+  @apply px-4 py-2 shadow;
 }
