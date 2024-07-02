@@ -32,7 +32,7 @@ export default function HeroHome() {
               href="#"
               className="rounded-md bg-primary px-4 py-3 text-md font-semibold text-black shadow-sm hover:bg-primary/80 hover:text-black hover:no-underline"
             >
-              See Our Process
+              Explore Our Process
             </a>
           </div>
         </div>

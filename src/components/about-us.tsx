@@ -1,22 +1,22 @@
 const features = [
   {
-    name: "Fleeting Notes",
-    description:
-      "Non quo aperiam repellendus quas est est. Eos aut dolore aut ut sit nesciunt. Ex tempora quia. Sit nobis consequatur dolores incidunt.",
-    href: "https://fleetingnotes.app",
-    icon: "https://fleetingnotes.app/assets/logo.png",
-  },
-  {
     name: "Slay School",
     description:
-      "Vero eum voluptatem aliquid nostrum voluptatem. Vitae esse natus. Earum nihil deserunt eos quasi cupiditate. A inventore et molestiae natus.",
+      "Backed by YCombinator with over 150k users globally, Slay School is an AI study tool that generates flashcards and quizzes from notes.",
     href: "https://slayschool.com",
     icon: "https://cdn.prod.website-files.com/651fdc93c87a9d5daab9e0cb/6520ab09af9d260b980236eb_webclip-slay.png",
   },
   {
+    name: "Fleeting Notes",
+    description:
+      "With over 9000 users, Fleeting Notes is a note-taking app specifically designed to take quick notes into Obsidian.",
+    href: "https://fleetingnotes.app",
+    icon: "https://fleetingnotes.app/assets/logo.png",
+  },
+  {
     name: "MVPScope",
     description:
-      "Et quod quaerat dolorem quaerat architecto aliquam accusantium. Ex adipisci et doloremque autem quia quam. Quis eos molestiae at iure impedit.",
+      "MVPScope is a self-serve AI software cost estimator for non-technical people looking to hire a developer.",
     href: "https://mvpscope.com",
     icon: "https://www.mvpscope.com/icon192.png",
   },
@@ -24,15 +24,14 @@ const features = [
 
 export default function AboutUs() {
   return (
-    <div className="bg-gray-900 py-24 sm:py-32">
+    <div className="py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Companies We've Built
+            Businesses We've Built
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-300">
-            Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam
-            voluptatum cupiditate veritatis in accusamus quisquam.
+            We don’t just write software; we build businesses
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">

@@ -2,32 +2,34 @@ import { CheckIcon } from "@heroicons/react/20/solid";
 
 const tiers = [
   {
-    name: "Freelancer",
-    id: "tier-freelancer",
+    name: "Free",
+    id: "free",
     href: "#",
     price: "$0",
-    description: "The essentials to provide your best work for clients.",
+    description: "Use our free and proven approach to build your startup",
     features: [
-      "5 products",
-      "Up to 1,000 subscribers",
-      "Basic analytics",
-      "48-hour support response time",
+      "Mobile / Web Boilerplate Code",
+      "Detailed Code Documentation",
+      "Developer Management Guide",
+      "Discord Community Support",
     ],
+    btnText: "Read Documentation",
     mostPopular: true,
   },
   {
-    name: "Startup",
-    id: "tier-startup",
+    name: "We Build Your MVP",
+    id: "mvp",
     href: "#",
     price: "$5000~",
-    description: "A plan that scales with your rapidly growing business.",
+    description:
+      "Our rate is $80/hr, and we typically build MVPs for around $5000",
     features: [
-      "25 products",
-      "Up to 10,000 subscribers",
-      "Advanced analytics",
-      "24-hour support response time",
-      "Marketing automations",
+      "Technical Co-founder",
+      "Completed MVP",
+      "Personalized Consultation Sessions",
+      "Post-Launch Support and Maintenance",
     ],
+    btnText: "Work With Us",
     mostPopular: false,
   },
 ];
@@ -38,7 +40,7 @@ function classNames(...classes: string[]) {
 
 export default function Pricing() {
   return (
-    <div className="py-24 sm:py-32">
+    <div className="py-24 sm:py-32 bg-[#343434]">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="text-base font-semibold leading-7 text-primary">
@@ -49,8 +51,8 @@ export default function Pricing() {
           </p>
         </div>
         <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-300">
-          Choose an affordable plan that’s packed with the best features for
-          engaging your audience, creating customer loyalty, and driving sales.
+          Use our method to build your startup, or trust us to build your
+          startup with our proven approach.
         </p>
         <div className="isolate mx-auto mt-10 grid max-w-md grid-cols-1 gap-16 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           {tiers.map((tier) => (
@@ -97,7 +99,7 @@ export default function Pricing() {
                   "mt-6 block rounded-md px-3 py-2 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 hover:no-underline",
                 )}
               >
-                Buy plan
+                {tier.btnText}
               </a>
               <div
                 role="list"
