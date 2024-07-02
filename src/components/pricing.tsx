@@ -4,7 +4,7 @@ const tiers = [
   {
     name: "Free",
     id: "free",
-    href: "#",
+    href: "/docs",
     price: "$0",
     description: "Use our free and proven approach to build your startup",
     features: [
@@ -19,7 +19,7 @@ const tiers = [
   {
     name: "We Build Your MVP",
     id: "mvp",
-    href: "#",
+    href: "https://usemotion.com/meet/ithinkwong/xyz6xw9?d=30",
     price: "$5000~",
     description:
       "Our rate is $80/hr, and we typically build MVPs for around $5000",

@@ -4,21 +4,21 @@ const features = [
     description:
       "Backed by YCombinator with over 150k users globally, Slay School is an AI study tool that generates flashcards and quizzes from notes.",
     href: "https://slayschool.com",
-    icon: "https://cdn.prod.website-files.com/651fdc93c87a9d5daab9e0cb/6520ab09af9d260b980236eb_webclip-slay.png",
+    icon: "/landing/slayschool-logo.png",
   },
   {
     name: "Fleeting Notes",
     description:
       "With over 9000 users, Fleeting Notes is a note-taking app specifically designed to take quick notes into Obsidian.",
     href: "https://fleetingnotes.app",
-    icon: "https://fleetingnotes.app/assets/logo.png",
+    icon: "/landing/fleetingnotes-logo.png",
   },
   {
     name: "MVPScope",
     description:
       "MVPScope is a self-serve AI software cost estimator for non-technical people looking to hire a developer.",
     href: "https://mvpscope.com",
-    icon: "https://www.mvpscope.com/icon192.png",
+    icon: "/landing/mvpscope-logo.png",
   },
 ];
 
