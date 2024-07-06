@@ -41,7 +41,6 @@ const result = shell.exec(
   { silent: true },
 );
 const topLevelItems = result.stdout.trim().split("\n");
-console.log(topLevelItems);
 
 // Loop through each non-hidden top-level item
 topLevelItems.forEach((item) => {
