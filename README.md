@@ -24,18 +24,16 @@ $ pnpm build
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
-### Deployment
+### Develop locally with remote resources
 
-Using SSH:
-
-```
-$ USE_SSH=true pnpm deploy
-```
-
-Not using SSH:
+1. Clone the [remote resources repository](https://github.com/devtodollars/devtodollars-resources) to a directory
 
 ```
-$ GIT_USER=<Your GitHub username> pnpm deploy
+git clone https://github.com/devtodollars/devtodollars-resources.git
 ```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+2. Run the below command to see docusaurus locally (does not include hot restart)
+
+```
+REPO_DIR="/PATH/TO/CLONED/REPO" npm run start
+```
