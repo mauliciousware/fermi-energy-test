@@ -1,6 +1,22 @@
+import { useEffect, useState } from "react";
 import GitHubButton from "react-github-btn";
 
 export default function HeroHome() {
+  const [stars, setStars] = useState(null);
+
+  useEffect(() => {
+    const fetchStars = async () => {
+      const owner = "devtodollars";
+      const repo = "mvp-boilerplate";
+      const response = await fetch(
+        `https://api.github.com/repos/${owner}/${repo}`,
+      );
+      const data = await response.json();
+      setStars(data.stargazers_count);
+    };
+
+    fetchStars();
+  }, []);
   return (
     <section className="relative isolate pt-14">
       <div
@@ -26,7 +42,7 @@ export default function HeroHome() {
           <p className="mt-6 text-lg leading-8 text-gray-300">
             Our templated code and processes are available for free and{" "}
             <span className="text-primary">
-              trusted by hundreds of developers
+              trusted by {stars ? stars : "hundreds of"} developers
             </span>
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
