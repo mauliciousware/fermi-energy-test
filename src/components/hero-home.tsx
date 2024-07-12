@@ -1,3 +1,5 @@
+import GitHubButton from "react-github-btn";
+
 export default function HeroHome() {
   return (
     <section className="relative isolate pt-14">
@@ -34,6 +36,16 @@ export default function HeroHome() {
             >
               Explore Our Process
             </a>
+            <GitHubButton
+              href="https://github.com/devtodollars/mvp-boilerplate"
+              data-color-scheme="no-preference: light; light: light; dark: dark;"
+              data-size="large"
+              data-icon="octicon-star"
+              data-show-count="true"
+              aria-label="Star devtodollars/mvp-boilerplate on GitHub"
+            >
+              Star
+            </GitHubButton>
           </div>
         </div>
       </div>
