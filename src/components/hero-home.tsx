@@ -33,12 +33,13 @@ export default function HeroHome() {
       </div>
       <div className="mx-auto max-w-3xl py-32 sm:py-48 lg:py-56">
         <div className="text-center">
-          <h1 className="text-5xl font-bold tracking-tight text-white md:text-6xl lg:text-7xl">
-            The World's Most{" "}
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary">
-              Transparent Dev Agency
-            </span>
-          </h1>
+        <h1 className="text-5xl font-bold tracking-tight text-white md:text-6xl lg:text-7xl text-transparent bg-clip-text bg-gradient-to-r from-primary">
+          <span className="text-primary"> Tech Co-founder</span> 
+          <br /> {/* New line added here */}
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-white">
+            as a Service{" "}
+          </span>
+        </h1>
           <p className="mt-6 text-lg leading-8 text-gray-300">
             Our templated code and processes are available for free and{" "}
             <span className="text-primary">
