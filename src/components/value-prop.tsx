@@ -45,7 +45,7 @@ const valueprops = [
 
 export default function ValueProp() {
     return (
-        <div className="pt-24 sm:pt-32 bg-[#343434]">
+        <div className="pt-24 sm:pt-32 sm:pb-5 bg-[#343434]">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-4xl text-center">
             <h2 className="text-base font-semibold leading-7 text-primary">
@@ -58,12 +58,12 @@ export default function ValueProp() {
           <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-300">
             We provide you with the expertise needed to define your requirements and build a world-class, scalable solution using the latest technologies. This allows you to move forward with your business while we handle the technical development.
           </p>
-          <div className="flex flex-wrap justify-between">
+          <div className="flex flex-col lg:flex-row mx-auto max-w-md lg:max-w-none flex-wrap justify-between gap-16 lg:gap-5">
             {valueprops.map((tier) => (
                 <div
                 key={tier.id}
-                className="rounded-3xl p-4 xl:p-6 ring-1 ring-white/10 "
-                style={{ flex: '1 1 22%', margin: '1%' }}
+                className="rounded-3xl p-4 xl:p-6 ring-1 ring-white/10"
+                style={{ flex: '1 1 22%' }}
                 >
                     <div className="flex items-center align-middle gap-x-4 ">
                         <img src={tier.iconUrl} alt={`${tier.name} icon`} className="h-12 w-12" />
