@@ -6,6 +6,7 @@ import Pricing from "../components/pricing";
 import MeetFounders from "../components/meet-founders";
 import ValueProp from "../components/value-prop";
 import Testimonial from "../components/testimonial";
+import MVPScope from "../components/mvp-scope";
 
 export default function Home(): JSX.Element {
 
@@ -14,6 +15,7 @@ export default function Home(): JSX.Element {
       <HeroHome />
       <ValueProp />
       <Pricing />
+      <MVPScope />
       <AboutUs />
       <Testimonial />
       <MeetFounders />

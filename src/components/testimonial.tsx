@@ -21,7 +21,7 @@ const testimonials = [
   },
   {
     img: '/img/AmirReza.jpg',
-    quote: "Working with DevtoDollars team was a great collaboration. Amirali was meticulous with details and demonstrated a strong sense of ownership over the final project outcome. Amirali consistently came up with creative ideas to save time during development without compromising the user experience. Additionally, he exhibited a technical cofounder's mentality, aiming to minimize costs on infrastructure and resources used to run the app. If you are seeking a dedicated and caring technical cofounder who can bring your idea to life, Amirali would be an excellent choice.",
+    quote: "Working with DevtoDollars team was a great collaboration. Amirali was meticulous with details and demonstrated a strong sense of ownership over the final project outcome. He consistently came up with creative ideas to save time during development without compromising the user experience. Additionally, he exhibited a technical cofounder's mentality, aiming to minimize costs on infrastructure and resources used to run the app. If you are seeking a dedicated and caring technical cofounder who can bring your idea to life, devtodollars would be an excellent choice.",
     name: 'Amir Azimi',
     role: 'Senior Product Manager, JOIN',
     project: 'Berlin Events Weekly'
@@ -51,7 +51,7 @@ export default function FancyTestimonialsSlider() {
   }, [])  
 
   return (
-    <div className="w-full max-w-3xl mx-auto text-center py-5 h-[32rem] relative">
+    <div className="w-full max-w-3xl mx-auto text-center py-5 h-[32rem] md:h-[32rem] h-[40rem] relative">
       {/* Testimonial image */}
       <div className="relative h-32">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[480px] h-[480px] pointer-events-none">
@@ -92,7 +92,7 @@ export default function FancyTestimonialsSlider() {
         </div>
       </div>
       {/* Text */}
-      <div className="mb-9 transition-all duration-150 delay-300 ease-in-out">
+      <div className="mb-9 transition-all duration-150 delay-300 ease-in-out px-4 md:px-0">
         <div className="relative flex flex-col" ref={testimonialsRef}>
 
           {testimonials.map((testimonial, index) => (
@@ -108,7 +108,9 @@ export default function FancyTestimonialsSlider() {
               leaveTo="opacity-0 translate-x-4"
               beforeEnter={() => heightFix()}
             >
-              <div className="text-2xl font-bold text-white before:content-['\201C'] after:content-['\201D']">{testimonial.quote}</div>
+              <div className="text-2xl font-bold text-white before:content-['\201C'] after:content-['\201D'] px-2 md:px-0">
+                {testimonial.quote}
+              </div>
             </Transition>
           ))}
 
