@@ -48,10 +48,10 @@ export default function HeroHome() {
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <a
-              href="/docs"
-              className="rounded-md bg-primary px-4 py-3 text-md font-semibold text-black shadow-sm hover:bg-primary/80 hover:text-black hover:no-underline"
+              href="https://cal.com/amirali-tabrizi/30min"
+              className="rounded-md bg-primary px-5 py-3 text-md font-semibold text-black shadow-sm hover:bg-primary/80 hover:text-black hover:no-underline"
             >
-              Explore Our Process
+              Let's Meet!
             </a>
             <GitHubButton
               href="https://github.com/devtodollars/mvp-boilerplate"

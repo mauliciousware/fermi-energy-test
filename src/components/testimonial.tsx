@@ -11,7 +11,24 @@ interface Testimonial {
   role: string
 }
 
-export default function FancyTestimonialsSlider({ testimonials }: { testimonials: Testimonial[] }) {
+const testimonials = [
+  {
+    img: '/img/Sabrina.png',
+    quote: "I had an incredible experience working with the DevtoDollars Team. They were not only responsive and fully understood the vision but also made the entire process seamless. As a founder with without a technical background, I was nervous about diving into the tech side, but they were able to simplify everything in a way that was easy for me to understand. I truly appreciated their ability to make complex concepts accessible, and it made all the difference.",
+    name: 'Sabrina Roy',
+    role: 'CEO, Fluid Events',
+    project: 'Event Mate'
+  },
+  {
+    img: '/img/AmirReza.jpg',
+    quote: "Working with DevtoDollars team was a great collaboration. Amirali was meticulous with details and demonstrated a strong sense of ownership over the final project outcome. Amirali consistently came up with creative ideas to save time during development without compromising the user experience. Additionally, he exhibited a technical cofounder's mentality, aiming to minimize costs on infrastructure and resources used to run the app. If you are seeking a dedicated and caring technical cofounder who can bring your idea to life, Amirali would be an excellent choice.",
+    name: 'Amir Azimi',
+    role: 'Senior Product Manager, JOIN',
+    project: 'Berlin Events Weekly'
+  },
+]
+
+export default function FancyTestimonialsSlider() {
   const testimonialsRef = useRef<HTMLDivElement>(null)
   const [active, setActive] = useState<number>(0)
   const [autorotate, setAutorotate] = useState<boolean>(true)
@@ -34,7 +51,7 @@ export default function FancyTestimonialsSlider({ testimonials }: { testimonials
   }, [])  
 
   return (
-    <div className="w-full max-w-3xl mx-auto text-center py-5">
+    <div className="w-full max-w-3xl mx-auto text-center py-5 h-[32rem] relative">
       {/* Testimonial image */}
       <div className="relative h-32">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[480px] h-[480px] pointer-events-none">
@@ -55,7 +72,19 @@ export default function FancyTestimonialsSlider({ testimonials }: { testimonials
                 leaveTo="opacity-0 rotate-[60deg]"
                 beforeEnter={() => heightFix()}
               >
-                <img className="fixed top-11 left-1/2 -translate-x-1/2 rounded-full object-cover" src={testimonial.img} width={70} height={70} alt={testimonial.name} />
+                <div className="flex flex-col items-center">
+                  <img 
+                    className="absolute top-1 left-1/2 -translate-x-1/2 rounded-full object-cover" 
+                    src={testimonial.img} 
+                    width={70} 
+                    height={70} 
+                    alt={testimonial.name} 
+                  />
+                  <div className="absolute top-[4.5rem] left-1/2 -translate-x-1/2 text-center">
+                    <div className="font-semibold text-white">{testimonial.name}</div>
+                    <div className="text-sm text-white/70">{testimonial.role}</div>
+                  </div>
+                </div>
               </Transition>
             ))}
             
@@ -85,19 +114,21 @@ export default function FancyTestimonialsSlider({ testimonials }: { testimonials
 
         </div>
       </div>
-      {/* Buttons */}
-      <div className="flex flex-wrap justify-center -m-1.5">
-
+      {/* Buttons - Updated positioning */}
+      <div className="flex flex-wrap justify-center -m-1.5 absolute bottom-5 left-0 right-0">
         {testimonials.map((testimonial, index) => (
           <button
             key={index}
-            className={`inline-flex justify-center whitespace-nowrap rounded-full px-3 py-1.5 m-1.5 text-xs shadow-sm focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 dark:focus-visible:ring-slate-600 transition-colors duration-150 ${active === index ? 'bg-indigo-500 text-white shadow-indigo-950/10' : 'bg-white hover:bg-indigo-100 text-slate-900'}`}
+            className={`border-none inline-flex justify-center whitespace-nowrap rounded-full px-4 py-2 m-1.5 text-sm font-bold shadow-sm transition-colors duration-300 ${
+              active === index
+                ? 'bg-primary text-black shadow-primary/10'
+                : 'bg-white/10 hover:bg-white/20 text-white'
+            }`}
             onClick={() => { setActive(index); setAutorotate(false); }}
           >
-            <span>{testimonial.name}</span> <span className={`${active === index ? 'text-indigo-200' : 'text-slate-300'}`}>-</span> <span>{testimonial.role}</span>
+            <span>{testimonial.project}</span> <span className={`${active === index ? 'text-primary/60' : 'text-white/60'}`}></span> 
           </button>
         ))}
-
       </div>
     </div>
   )

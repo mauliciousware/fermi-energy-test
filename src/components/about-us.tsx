@@ -14,11 +14,11 @@ const features = [
     icon: "/landing/fleetingnotes-logo.png",
   },
   {
-    name: "MVPScope",
+    name: "Event Mate",
     description:
-      "MVPScope is a self-serve AI software cost estimator for non-technical people looking to hire a developer.",
-    href: "https://mvpscope.com",
-    icon: "/landing/mvpscope-logo.png",
+      "EventMate simplifies and streamlines event planning for event planners, non-profits, and organizations.",
+    href: "https://eventmate.ca",
+    icon: "/landing/eventmate-logo.svg",
   },
 ];
 
@@ -41,7 +41,9 @@ export default function AboutUs() {
                 <dt className="text-base font-semibold leading-7 text-white">
                   <img
                     src={feature.icon}
-                    className="flex mb-6 rounded-lg h-10 w-10 items-center justify-center "
+                    className={`flex mb-6 rounded-lg h-10 w-10 items-center justify-center ${
+                      feature.name === "Event Mate" ? "bg-white p-1" : ""
+                    }`}
                   />
                   {feature.name}
                 </dt>
