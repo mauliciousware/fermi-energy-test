@@ -34,9 +34,9 @@ export default function HeroHome() {
       <div className="mx-auto max-w-3xl py-32 sm:py-48 lg:py-56">
         <div className="text-center">
         <h1 className="text-5xl font-bold tracking-tight text-white md:text-6xl lg:text-7xl text-transparent bg-clip-text bg-gradient-to-r from-primary">
-          <span className="text-primary"> Tech Co-founder</span> 
+          <span className="text-primary "> Tech Co-founder</span> 
           <br /> {/* New line added here */}
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-white">
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-white tracking-wide">
             as a Service{" "}
           </span>
         </h1>
@@ -48,10 +48,10 @@ export default function HeroHome() {
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <a
-              href="/docs"
-              className="rounded-md bg-primary px-4 py-3 text-md font-semibold text-black shadow-sm hover:bg-primary/80 hover:text-black hover:no-underline"
+              href="https://cal.com/amirali-tabrizi/30min"
+              className="rounded-md bg-primary px-5 py-3 text-md font-semibold text-black shadow-sm hover:bg-primary/80 hover:text-black hover:no-underline"
             >
-              Explore Our Process
+              Let's Meet!
             </a>
             <GitHubButton
               href="https://github.com/devtodollars/mvp-boilerplate"

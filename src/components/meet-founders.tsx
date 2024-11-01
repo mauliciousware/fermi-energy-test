@@ -1,18 +1,18 @@
 const people = [
   {
-    name: "Matthew Wong",
-    role: "Co-Founder / CEO",
-    imageUrl: "/landing/matthew.jpeg",
-    bio: "A former CTO of a YC-backed startup. He has built multiple startups, including one with a successful exit and the most recent gaining over 150,000 users",
-    xUrl: "https://twitter.com/IThinkWong",
-    linkedinUrl: "https://www.linkedin.com/in/ithinkwong/",
+    name: "Amirali Azimi Tabrizi",
+    role: "Co-Founder",
+    imageUrl: "/landing/amirali.jpeg",
+    bio: "A passionate software developer with extensive industry and freelance experience, Amirali has successfully scoped and built numerous MVPs. Amirali is currently working full-time on devtodollars.",
+    linkedinUrl: "https://www.linkedin.com/in/amirali-azimi-tabrizi/",
   },
   {
-    name: "Amirali Azimi Tabrizi",
-    role: "Co-Founder / CTO",
-    imageUrl: "/landing/amirali.jpeg",
-    bio: "A passionate software developer with extensive industry and freelance experience, Amirali has successfully scoped and built numerous MVPs",
-    linkedinUrl: "https://www.linkedin.com/in/amirali-azimi-tabrizi/",
+    name: "Matthew Wong",
+    role: "Co-Founder",
+    imageUrl: "/landing/matthew.jpeg",
+    bio: "A former CTO of a YC-backed startup. He has built multiple startups, including one with a successful exit and the most recent gaining over 150,000 users.\n Matthew is currently working as an advisor to devtodollars.",
+    xUrl: "https://twitter.com/IThinkWong",
+    linkedinUrl: "https://www.linkedin.com/in/ithinkwong/",
   },
   // More people...
 ];
@@ -47,7 +47,7 @@ export default function MeetFounders() {
                 <p className="text-base leading-7 text-primary opacity-80">
                   {person.role}
                 </p>
-                <p className="mt-6 text-base leading-7 text-gray-300">
+                <p className="mt-6 text-base leading-7 text-gray-300 whitespace-pre-line">
                   {person.bio}
                 </p>
                 <div role="list" className="mt-6 flex gap-x-6">
