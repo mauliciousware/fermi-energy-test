@@ -51,10 +51,10 @@ export default function FancyTestimonialsSlider() {
   }, [])  
 
   return (
-    <div className="w-full max-w-3xl mx-auto text-center py-5 h-[32rem] md:h-[32rem] h-[40rem] relative">
+    <div className="mx-auto text-center py-5 md:max-w-3xl md:h-[32rem] h-[42rem] relative overflow-hidden">
       {/* Testimonial image */}
       <div className="relative h-32">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[480px] h-[480px] pointer-events-none">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[400px] md:w-[480px] h-[480px] pointer-events-none">
           <div className="absolute inset-0 bg-gradient-to-b from-yellow-400/25 via-indigo-500/5 to-indigo-500/0 rounded-full -z-10"></div>
           <div className="h-32 [mask-image:_linear-gradient(0deg,transparent,theme(colors.white)_20%,theme(colors.white))]">
 
@@ -108,7 +108,7 @@ export default function FancyTestimonialsSlider() {
               leaveTo="opacity-0 translate-x-4"
               beforeEnter={() => heightFix()}
             >
-              <div className="text-2xl font-bold text-white before:content-['\201C'] after:content-['\201D'] px-2 md:px-0">
+              <div className="text-xl md:text-2xl font-bold text-white before:content-['\201C'] after:content-['\201D'] px-2 md:px-0">
                 {testimonial.quote}
               </div>
             </Transition>
