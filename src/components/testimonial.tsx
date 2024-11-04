@@ -51,7 +51,7 @@ export default function FancyTestimonialsSlider() {
   }, [])  
 
   return (
-    <div className="mx-auto text-center py-5 md:max-w-3xl md:h-[32rem] h-[42rem] relative overflow-hidden">
+    <div className="mx-auto text-center py-5 md:max-w-3xl md:h-[32rem] h-[50rem] relative overflow-hidden">
       {/* Testimonial image */}
       <div className="relative h-32">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[400px] md:w-[480px] h-[480px] pointer-events-none">
@@ -117,7 +117,7 @@ export default function FancyTestimonialsSlider() {
         </div>
       </div>
       {/* Buttons - Updated positioning */}
-      <div className="flex flex-wrap justify-center -m-1.5 absolute bottom-5 left-0 right-0">
+      <div className="flex flex-wrap justify-center -m-1.5 absolute bottom-5 left-0 right-0 mt-2">
         {testimonials.map((testimonial, index) => (
           <button
             key={index}
