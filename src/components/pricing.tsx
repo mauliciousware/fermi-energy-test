@@ -41,7 +41,7 @@ const tiers = [
     description:
       "For more established concepts, we offer a comprehensive MVP tailored to address known challenges in your industry, making it ready for early market entry.",
     features: [
-      "Strategic Technical Co-founder",
+      "Strategic Technical Co-founder 1",
       "Comprehensive MVP build",
       "Personalized Consultation Sessions",
       "Post-Launch Support and Maintenance",
