@@ -20,12 +20,19 @@ const testimonials = [
     project: 'Event Mate'
   },
   {
+    img: '/img/David.png',
+    quote: "Working with Devtodollars was fantastic! Amirali was super responsive, quick to address any questions, and brought in creative ideas that really elevated the project. Highly recommend for anyone looking for a professional MVP building service. Thanks, Amirali!",
+    name: 'David Dietrich',
+    role: 'Founder',
+    project: 'Cudos.bio'
+  },
+  {
     img: '/img/AmirReza.jpg',
     quote: "Working with DevtoDollars team was a great collaboration. Amirali was meticulous with details and demonstrated a strong sense of ownership over the final project outcome. He consistently came up with creative ideas to save time during development without compromising the user experience. Additionally, he exhibited a technical cofounder's mentality, aiming to minimize costs on infrastructure and resources used to run the app. If you are seeking a dedicated and caring technical cofounder who can bring your idea to life, devtodollars would be an excellent choice.",
     name: 'Amir Azimi',
     role: 'Senior Product Manager, JOIN',
     project: 'Berlin Events Weekly'
-  },
+  }
 ]
 
 export default function FancyTestimonialsSlider() {
