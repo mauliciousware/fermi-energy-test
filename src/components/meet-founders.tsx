@@ -1,18 +1,17 @@
 const people = [
   {
-    name: "Amirali Azimi Tabrizi",
+    name: "Zhengrui 'Ray' Xu",
     role: "Co-Founder",
-    imageUrl: "/landing/amirali.jpeg",
-    bio: "A passionate software developer with extensive industry and freelance experience, Amirali has successfully scoped and built numerous MVPs. Amirali is currently working full-time on devtodollars.",
-    linkedinUrl: "https://www.linkedin.com/in/amirali-azimi-tabrizi/",
+    imageUrl: "img/CEO.png",
+    bio: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem",
+    linkedinUrl: "https://www.linkedin.com/in/zhengrui-xu/",
   },
   {
-    name: "Matthew Wong",
+    name: "Feng Lin",
     role: "Co-Founder",
-    imageUrl: "/landing/matthew.jpeg",
-    bio: "A former CTO of a YC-backed startup. He has built multiple startups, including one with a successful exit and the most recent gaining over 150,000 users.\n Matthew is currently working as an advisor to devtodollars.",
-    xUrl: "https://twitter.com/IThinkWong",
-    linkedinUrl: "https://www.linkedin.com/in/ithinkwong/",
+    imageUrl: "img/CTO.png",
+    bio: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem",
+    linkedinUrl: "https://www.linkedin.com/in/zhengrui-xu/",
   },
   // More people...
 ];

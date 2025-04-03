@@ -8,7 +8,7 @@ export default function AboutMe() {
           {/* Section header */}
           <div className="max-w-2xl mx-auto text-center">
             <div className="flex items-center justify-center gap-8 mb-8">
-              <img className="rounded-full" src="img/me.jpeg" width={96} height={96} alt="Features bg" />
+              <img className="rounded-full" src="img/CTO.png" width={96} height={96} alt="Features bg" />
               <h2 className="text-5xl font-wood mb-0">Hey, I'm Matt 👋</h2>
             </div>
             <p className="text-xl font-mont text-left mb-8">I'm a former <a href="/blog/from-cto-of-yc-backed-startup-back-to-indiehacker">CTO of a YC backed startup</a>. I've built over 5 apps with the most recent startup gaining over 100,000 users.</p>

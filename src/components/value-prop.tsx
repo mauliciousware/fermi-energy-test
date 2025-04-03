@@ -63,7 +63,7 @@ export default function ValueProp() {
         <div className="pt-24 sm:pt-32 sm:pb-5 bg-[#343434]">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-none text-left">
-                    <h2 className="text-base font-semibold leading-7 text-yellow-400">
+                    <h2 className="text-base font-semibold leading-7 text-green-400">
                         Why work with us
                     </h2>
                     <p className="mt-2 text-4xl font-bold tracking-tight text-white sm:text-5xl">
@@ -80,7 +80,7 @@ export default function ValueProp() {
                             className="rounded-3xl w-full lg:w-[calc(25%-1.25rem)]"
                         >
                             <div className="flex flex-col items-start gap-y-4">
-                                <div className="text-5xl text-black p-4 bg-yellow-400 border-2 border-yellow-400 shadow-lg shadow-yellow-400/50 rounded-lg w-18 h-18 flex items-center justify-center">
+                                <div className="text-5xl text-black p-4 bg-green-400 border-2 border-green-400 shadow-lg shadow-green-400/50 rounded-lg w-18 h-18 flex items-center justify-center">
                                     {tier.icon}
                                 </div>
                                 <h3

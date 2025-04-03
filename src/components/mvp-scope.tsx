@@ -47,7 +47,7 @@ from 'lucide-react';
           <div className="pt-24 sm:pt-32 sm:pb-5 bg-[#343434]">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-none text-left">
-                    <h2 className="text-base font-semibold leading-7 text-yellow-400">
+                    <h2 className="text-base font-semibold leading-7 text-green-400">
                         Get a Clear Vision for Your MVP
                     </h2>
                     <p className="mt-2 text-4xl font-bold tracking-tight text-white sm:text-5xl">
@@ -69,25 +69,25 @@ from 'lucide-react';
                             </h3>
                             <div className="grid grid-cols-2 gap-6 mb-6">
                                 <div className="flex flex-col items-center text-center">
-                                    <div className="text-3xl text-black p-3 bg-yellow-400 border-2 border-yellow-400 shadow-lg shadow-yellow-400/50 rounded-lg flex items-center justify-center mb-3">
+                                    <div className="text-3xl text-black p-3 bg-green-400 border-2 border-green-400 shadow-lg shadow-green-400/50 rounded-lg flex items-center justify-center mb-3">
                                         <ListCheck strokeWidth={1.5} />
                                     </div>
                                     <span className="font-bold text-gray-300">Core Features</span>
                                 </div>
                                 <div className="flex flex-col items-center text-center">
-                                    <div className="text-3xl text-black p-3 bg-yellow-400 border-2 border-yellow-400 shadow-lg shadow-yellow-400/50 rounded-lg flex items-center justify-center mb-3">
+                                    <div className="text-3xl text-black p-3 bg-green-400 border-2 border-green-400 shadow-lg shadow-green-400/50 rounded-lg flex items-center justify-center mb-3">
                                         <ListRestart strokeWidth={1.5} />
                                     </div>
                                     <span className="font-bold text-gray-300">User Workflow</span>
                                 </div>
                                 <div className="flex flex-col items-center text-center">
-                                    <div className="text-3xl text-black p-3 bg-yellow-400 border-2 border-yellow-400 shadow-lg shadow-yellow-400/50 rounded-lg flex items-center justify-center mb-3">
+                                    <div className="text-3xl text-black p-3 bg-green-400 border-2 border-green-400 shadow-lg shadow-green-400/50 rounded-lg flex items-center justify-center mb-3">
                                         <MessageCircleQuestion strokeWidth={1.5} />
                                     </div>
                                     <span className="font-bold text-gray-300">Problem Statement</span>
                                 </div>
                                 <div className="flex flex-col items-center text-center">
-                                    <div className="text-3xl text-black p-3 bg-yellow-400 border-2 border-yellow-400 shadow-lg shadow-yellow-400/50 rounded-lg flex items-center justify-center mb-3">
+                                    <div className="text-3xl text-black p-3 bg-green-400 border-2 border-green-400 shadow-lg shadow-green-400/50 rounded-lg flex items-center justify-center mb-3">
                                         <FolderCode strokeWidth={1.5} />
                                     </div>
                                     <span className="font-bold text-gray-300">Software Platform</span>
@@ -98,7 +98,7 @@ from 'lucide-react';
                             href="https://www.mvpscope.com" 
                             target="_blank" 
                             rel="noopener noreferrer"
-                            className="flex items-center justify-center text-yellow-400 hover:text-yellow-300 transition-colors no-underline mt-auto"
+                            className="flex items-center justify-center text-green-400 hover:text-green-300 transition-colors no-underline mt-auto"
                         >
                             <span className="text-lg font-semibold no-underline">Visit MVP Scope</span>
                             <span className="ml-2">→</span>
