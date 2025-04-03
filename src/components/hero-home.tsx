@@ -1,24 +1,23 @@
 import { useEffect, useState } from "react";
-import GitHubButton from "react-github-btn";
 
 export default function HeroHome() {
   const [stars, setStars] = useState(null);
 
-  useEffect(() => {
-    const fetchStars = async () => {
-      const owner = "devtodollars";
-      const repo = "mvp-boilerplate";
-      const response = await fetch(
-        `https://api.github.com/repos/${owner}/${repo}`,
-      );
-      const data = await response.json();
-      setStars(data.stargazers_count);
-    };
-
-    fetchStars();
-  }, []);
   return (
-    <section className="relative isolate pt-14">
+    <section className="relative isolate pt-14 min-h-screen">
+      <div className="absolute inset-0 -z-10 w-full h-full">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover opacity-30"
+        >
+          <source src="/video/videofermi.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div className="absolute inset-0 bg-black opacity-50"></div>
+      </div>
       <div
         className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
         aria-hidden="true"
@@ -53,16 +52,6 @@ export default function HeroHome() {
             >
               Let's Meet!
             </a>
-            <GitHubButton
-              href="https://github.com/devtodollars/mvp-boilerplate"
-              data-color-scheme="no-preference: light; light: light; dark: dark;"
-              data-size="large"
-              data-icon="octicon-star"
-              data-show-count="true"
-              aria-label="Star devtodollars/mvp-boilerplate on GitHub"
-            >
-              Star
-            </GitHubButton>
           </div>
         </div>
       </div>

@@ -4,19 +4,19 @@ import type * as Preset from '@docusaurus/preset-classic';
 import tailwindPlugin from "./plugins/tailwind-config.cjs";
 
 const config: Config = {
-  title: 'DevToDollars',
+  title: 'Fermi Energy',
   tagline: 'Helping Developers Become Founders',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon2.ico',
 
   // Set the production url of your site here
-  url: 'https://devtodollars.com',
+  url: 'https://www.fermienergy.com/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'devtodollars', // Usually your GitHub org/user name.
+  organizationName: 'fermi', // Usually your GitHub org/user name.
   projectName: 'website', // Usually your repo name.
 
   onBrokenLinks: 'throw',
@@ -49,16 +49,16 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/devtodollars-social.png',
+    image: 'img/LOGO.png',
     colorMode: {
       defaultMode: 'dark',
       disableSwitch: true,
     },
     navbar: {
-      title: 'DevToDollars',
+      title: 'Fermi Energy',
       logo: {
         alt: 'money bag',
-        src: 'img/devtodollars.png',
+        src: 'img/LOGO.png',
       },
       items: [
         {

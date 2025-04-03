@@ -22,23 +22,26 @@ module.exports = {
         sm: "0px",
         lg: "997px",
       },
-      colors: {
-        primary: "#ffca28",
-        surface1: "#343434",
-        surface2: "#1b1b1d",
-        gray: {
-          50: '#e5e5e5',
-          100: '#cccccc',
-          200: '#b3b3b3',
-          300: '#999999',
-          400: '#808080',
-          500: '#666666',
-          600: '#4d4d4d',
-          700: '#343434',
-          800: '#1b1b1d',
-          900: '#000000',
-        },
-      },
+colors: {
+  primary: "#4CAF50", // Nature green from the "E"
+  accent: "#E53935",  // Red from the "F"
+  neutral: "#0F2C3F", // Dark navy used in text and wheels
+  surface1: "#343434",
+  surface2: "#1b1b1d",
+  gray: {
+    50: '#e5e5e5',
+    100: '#cccccc',
+    200: '#b3b3b3',
+    300: '#999999',
+    400: '#808080',
+    500: '#666666',
+    600: '#4d4d4d',
+    700: '#343434',
+    800: '#1b1b1d',
+    900: '#000000',
+  },
+},
+
     },
   },
   plugins: [],
