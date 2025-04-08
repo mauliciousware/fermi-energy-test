@@ -59,12 +59,12 @@ function copyRepoContent(repo_url, repo_dir, target_dir) {
   console.log(`Copied ${repo_dir} to ${target_dir}`);
 }
 
-const DOCS_REPO_URL = "https://github.com/devtodollars/mvp-boilerplate.git";
-const BLOG_REPO_URL =
-  "https://github.com/devtodollars/devtodollars-resources.git";
+// const DOCS_REPO_URL = "https://github.com/devtodollars/mvp-boilerplate.git";
+// const BLOG_REPO_URL =
+//   "https://github.com/devtodollars/devtodollars-resources.git";
 
-// Copy content to the 'docs' directory
-copyRepoContent(DOCS_REPO_URL, "docs", "docs");
+// // Copy content to the 'docs' directory
+// copyRepoContent(DOCS_REPO_URL, "docs", "docs");
 
-// Copy content to the 'blog' directory
-copyRepoContent(BLOG_REPO_URL, "blog", "blog");
+// // Copy content to the 'blog' directory
+// copyRepoContent(BLOG_REPO_URL, "blog", "blog");

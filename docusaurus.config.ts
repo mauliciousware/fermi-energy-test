@@ -59,7 +59,7 @@ const config: Config = {
         src: 'img/LOGO.png',
       },
       items: [
-        { to: '/blog', label: 'Blog', position: 'left' },
+        { to: '/blog', label: 'News', position: 'left' },
         {
           to: '/dashboard', 
           label: 'Dashboard',
