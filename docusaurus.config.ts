@@ -61,13 +61,13 @@ const config: Config = {
         src: 'img/LOGO.png',
       },
       items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'docsSidebar',
-          position: 'left',
-          label: 'Docs',
-        },
         { to: '/blog', label: 'Blog', position: 'left' },
+        {
+          to: '/dashboard', 
+          label: 'Dashboard',
+          position: 'right',
+          className: 'navbar-dashboard-link',
+        },
         {
           href: 'https://discord.gg/6q63Xa6SEB',
           className: 'header-discord-link',
@@ -88,25 +88,8 @@ const config: Config = {
           title: 'Resources',
           items: [
             {
-              label: 'Docs',
-              to: '/docs',
-            },
-            {
               label: 'Blog',
               to: '/blog',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Discord',
-              href: 'https://discord.gg/6q63Xa6SEB',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/ithinkwong',
             },
           ],
         },
