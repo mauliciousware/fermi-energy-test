@@ -34,9 +34,7 @@ const config: Config = {
     [
       'classic',
       {
-        docs: {
-          sidebarPath: './sidebars.ts',
-        },
+        docs: false, // Changed this line - disabled docs
         blog: {
           showReadingTime: true,
         },
