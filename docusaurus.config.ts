@@ -5,47 +5,87 @@ import tailwindPlugin from "./plugins/tailwind-config.cjs";
 
 const config: Config = {
   title: 'Fermi Energy',
-  tagline: 'Helping Developers Become Founders',
+  tagline: 'Combat climate change with disruptive battery technologies',
   favicon: 'img/favicon2.ico',
 
-  // Set the production url of your site here
-  url: 'https://www.fermienergy.com/',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
+  // SEO and site configuration
+  url: 'https://www.fermienergy.com',
   baseUrl: '/',
+  trailingSlash: true,
+  organizationName: 'fermi',
+  projectName: 'website',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'fermi', // Usually your GitHub org/user name.
-  projectName: 'website', // Usually your repo name.
-
+  // Error handling
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
+  // Internationalization
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
   },
 
+  // Site presets
   presets: [
     [
       'classic',
       {
-        docs: false, // Changed this line - disabled docs
+        docs: false,
         blog: {
           showReadingTime: true,
+          blogSidebarCount: 'ALL',
+          blogTitle: 'News & Updates',
+          blogDescription: 'Stay up to date with Fermi Energy\'s latest developments in battery technology',
+          feedOptions: {
+            type: 'all',
+            title: 'Fermi Energy News',
+            description: 'Latest updates on battery technology innovations',
+            language: 'en',
+            copyright: `Copyright © ${new Date().getFullYear()} Fermi Energy, Inc.`
+          },
         },
         theme: {
           customCss: './src/css/custom.css',
+        },
+        sitemap: {
+          changefreq: 'weekly',
+          priority: 0.5,
+          ignorePatterns: ['/tags/**'],
+          filename: 'sitemap.xml',
         },
       } satisfies Preset.Options,
     ],
   ],
 
   themeConfig: {
+    // SEO metadata
+    metadata: [
+      {name: 'keywords', content: 'battery technology, cathode materials, electric vehicle, energy storage, EV batteries, Virginia Tech, manganese, cobalt, lithium, sustainability, green energy'},
+      {name: 'description', content: 'Fermi Energy develops innovative cathode technologies for sustainable, high-performance EV batteries. Leading the charge in next-generation energy storage solutions.'},
+      {name: 'application-name', content: 'Fermi Energy'},
+      {name: 'apple-mobile-web-app-title', content: 'Fermi Energy'},
+      {name: 'author', content: 'Fermi Energy, Inc.'},
+      
+      // Open Graph metadata
+      {property: 'og:title', content: 'Fermi Energy - Advanced Battery Technology'},
+      {property: 'og:description', content: 'Pioneering sustainable battery technologies for the future of electric vehicles'},
+      {property: 'og:image', content: 'img/LOGO.png'},
+      {property: 'og:url', content: 'https://www.fermienergy.com'},
+      {property: 'og:type', content: 'website'},
+      
+      // Twitter Card metadata
+      {name: 'twitter:card', content: 'summary_large_image'},
+      {name: 'twitter:title', content: 'Fermi Energy - Battery Innovation'},
+      {name: 'twitter:description', content: 'Developing next-generation cathode materials for sustainable EV batteries'},
+      {name: 'twitter:image', content: 'img/LOGO.png'},
+      
+      // Geo metadata
+      {name: 'geo.region', content: 'US-VA'},
+      {name: 'geo.placename', content: 'Blacksburg'},
+      {name: 'geo.position', content: '37.2296;-80.4139'},
+      {name: 'ICBM', content: '37.2296, -80.4139'}
+    ],
+
     // Replace with your project's social card
     image: 'img/LOGO.png',
     colorMode: {
@@ -98,15 +138,17 @@ const config: Config = {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
-  } satisfies Preset.ThemeConfig,
+  },
+
+  // Additional plugins for SEO
   plugins: [
+    tailwindPlugin,
     [
       "posthog-docusaurus",
       {
         apiKey: "phc_brFjanMrA2KXPYyvFjLdwJC9VJvl4VG7mG9yKqvgCCY",
       },
     ],
-    tailwindPlugin,
   ],
 };
 
