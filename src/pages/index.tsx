@@ -7,6 +7,7 @@ import MeetFounders from "../components/meet-founders";
 import ValueProp from "../components/value-prop";
 import Testimonial from "../components/testimonial";
 import MVPScope from "../components/mvp-scope";
+import ProcessFlow from "../components/ProcessFlow"
 
 export default function Home(): JSX.Element {
 
@@ -20,6 +21,7 @@ export default function Home(): JSX.Element {
       <Testimonial />
       <MeetFounders />
       <Cta />
+      <ProcessFlow />
     </Layout>
   );
 }
