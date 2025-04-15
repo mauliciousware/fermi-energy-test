@@ -1,8 +1,8 @@
 import { 
-  FolderSync, 
-  SendToBack,
-  Gauge,
-  BrainCircuit 
+  Battery, 
+  Zap,
+  Leaf,
+  Shield 
 } from 'lucide-react';
 
 interface Feature {
@@ -20,42 +20,41 @@ interface ValueProp {
 
 const valueprops: ValueProp[] = [
     {
-      name: "Transferability",
-      id: "end-to-end",
-      description: "Our documentation is available even before you start working with us so you can be sure that your future CTO has everything they need to continue growing your business.",
-      icon: <FolderSync/>,
+      name: "Advanced Battery Technology",
+      id: "battery-tech",
+      description: "Our cutting-edge battery technology delivers superior performance with faster charging times and longer lifespan compared to conventional solutions.",
+      icon: <Battery/>,
       features: [
-        {desc:<span>Access <strong>comprehensive documentation</strong> before our partnership begins</span>}
+        {desc:<span>Patented <strong>fast-charging technology</strong> that reduces charging time by up to 50%</span>}
       ],
     },
     {
-      name: "End-to-End",
-      id: "end-to-end",
-      description: "We help you with all stages from design, development, to deployment. We also have experience with sales and marketing and can give guidance on those areas from a technical perspective.",
-      icon: <SendToBack />,
+      name: "Sustainable Energy",
+      id: "sustainability",
+      description: "We're committed to reducing environmental impact through innovative battery solutions that minimize resource consumption and maximize efficiency.",
+      icon: <Leaf />,
       features: [
-        {desc: <span>Manage every stage of building your business: <strong>design</strong>, <strong>development</strong>, and <strong>deployment</strong></span>},
+        {desc: <span>Environmentally friendly materials and <strong>zero-emission</strong> production processes</span>},
       ],
     },
     {
-      name: "Speed",
-      id: "speed",
-      description: "Typical MVPs take us a month to build from start to finish and at maximum we expect to spend 2 months. We take out all the fluff and just focus on what matters.",
-      icon: <Gauge />,
+      name: "High Performance",
+      id: "performance",
+      description: "Our batteries deliver exceptional power density and energy efficiency, enabling longer range and better performance for electric vehicles.",
+      icon: <Zap />,
       features: [
-        {desc: <span>Deliver your project from <strong>start to finish</strong> within <strong>1-2 months</strong></span>},
+        {desc: <span>Up to <strong>40% more energy density</strong> than conventional lithium-ion batteries</span>},
       ],
     },
     {
-        name: "Startup Experience",
-        id: "scalability",
-        description: "We use technology built for launching fast and scaling to millions. Our open sourced templated code is trusted by over 500 developers. Our founderʼs experience includes successfully scaling an app to over 150,000 active users.",
-        icon: <BrainCircuit />,
+        name: "Safety & Reliability",
+        id: "safety",
+        description: "Built with multiple layers of protection and advanced thermal management systems, our batteries set new standards for safety and reliability.",
+        icon: <Shield />,
         features: [
-          {desc: <span>Founders with a track record of <strong>successful startup exits</strong></span>},
+          {desc: <span>Industry-leading <strong>safety certifications</strong> and comprehensive testing protocols</span>},
         ],
     },
-
   ];
 
 export default function ValueProp() {
@@ -64,13 +63,13 @@ export default function ValueProp() {
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-none text-left">
                     <h2 className="text-base font-semibold leading-7 text-green-400">
-                        Why work with us
+                        Our Technology
                     </h2>
                     <p className="mt-2 text-4xl font-bold tracking-tight text-white sm:text-5xl">
-                        Our Values at DevToDollars
+                        Why Choose Our Battery Solutions
                     </p>
                     <p className="mt-0 max-w-2xl text-lg leading-8 text-gray-300">
-                        Move your business forward while looking for a perfect fit for your in house CTO
+                        Revolutionizing EV charging with innovative battery technology that's cleaner, faster, and more efficient
                     </p>
                 </div>
                 <div className="flex flex-col lg:flex-row mx-auto max-w-md lg:max-w-none flex-wrap justify-between gap-16 lg:gap-5">

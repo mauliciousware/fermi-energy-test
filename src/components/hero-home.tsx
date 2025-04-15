@@ -11,9 +11,9 @@ export default function HeroHome() {
           loop
           muted
           playsInline
-          className="w-full h-full object-cover opacity-30"
+          className="w-full h-full object-cover opacity-90"
         >
-          <source src="/video/videofermi.mp4" type="video/mp4" />
+          <source src="/video/videoFermi.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="absolute inset-0 bg-black opacity-50"></div>
@@ -32,17 +32,17 @@ export default function HeroHome() {
       </div>
       <div className="mx-auto max-w-3xl py-32 sm:py-48 lg:py-56">
         <div className="text-center">
-        <h1 className="text-5xl font-bold tracking-tight text-white md:text-6xl lg:text-7xl text-transparent bg-clip-text bg-gradient-to-r from-primary">
-          <span className="text-primary "> Combat climate change</span> 
-          <br /> {/* New line added here */}
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-white tracking-wide">
-          with disruptive battery technologies{" "}
-          </span>
-        </h1>
+          <h1 className="text-5xl font-bold tracking-tight text-white md:text-6xl lg:text-7xl text-transparent bg-clip-text bg-gradient-to-r from-primary">
+            <span className="text-primary">Powering the Future</span> 
+            <br />
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-white tracking-wide">
+              with Sustainable EV Battery Solutions
+            </span>
+          </h1>
           <p className="mt-6 text-lg leading-8 text-gray-300">
-          Some Random text{" "}
+            Revolutionizing electric vehicle charging with our cutting-edge battery technology
             <span className="text-primary">
-              trusted by {stars ? stars : "hundreds of"} developers
+              that's cleaner, faster, and more efficient
             </span>
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
@@ -50,7 +50,7 @@ export default function HeroHome() {
               href="https://cal.com/amirali-tabrizi/30min"
               className="rounded-md bg-primary px-5 py-3 text-md font-semibold text-black shadow-sm hover:bg-primary/80 hover:text-black hover:no-underline"
             >
-              Let's Meet!
+              Schedule a Demo
             </a>
           </div>
         </div>

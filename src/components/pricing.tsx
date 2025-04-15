@@ -2,53 +2,53 @@ import { CheckIcon } from "@heroicons/react/20/solid";
 
 const tiers = [
   {
-    name: "Free",
-    id: "free",
-    href: "/docs",
+    name: "Starter Pack",
+    id: "starter",
+    href: "/contact",
     price: "$0",
-    description: "Use our free and proven approach to build your startup",
+    description: "Get started with our basic battery technology solutions",
     features: [
-      "Mobile / Web Boilerplate Code",
-      "Detailed Code Documentation",
-      "Developer Management Guide",
-      "Discord Community Support",
+      "Basic Battery Management System",
+      "Standard Charging Protocol",
+      "Technical Documentation",
+      "Email Support",
     ],
-    btnText: "Read Documentation",
+    btnText: "Get Started",
     mostPopular: false,
   },
   {
-    name: "Validate Your MVP",
-    id: "mvp",
-    href: "https://cal.com/amirali-tabrizi/30min",
-    price: "$5000~",
+    name: "Professional",
+    id: "professional",
+    href: "/contact",
+    price: "$50,000",
     description:
-      "Perfect for early validation: we'll build a lean MVP, ideal for proving your concept with minimal investment and low risk.",
+      "Perfect for EV manufacturers: advanced battery technology with fast charging capabilities and comprehensive support.",
     features: [
-      "Technical Co-founder",
-      "Lean MVP Build",
-      "Personalized Consultation Sessions",
-      "Post-Launch Support and Maintenance",
-      "Iterative Development based on Feedback",
+      "Advanced Battery Management System",
+      "Fast Charging Technology",
+      "Thermal Management System",
+      "24/7 Technical Support",
+      "Regular Software Updates",
     ],
-    btnText: "Work With Us",
+    btnText: "Contact Sales",
     mostPopular: true,
   },
   {
-    name: "Comprehensive MVP",
-    id: "mvp",
-    href: "https://cal.com/amirali-tabrizi/30min",
-    price: "$10,000~",
+    name: "Enterprise",
+    id: "enterprise",
+    href: "/contact",
+    price: "Custom",
     description:
-      "For more established concepts, we offer a comprehensive MVP tailored to address known challenges in your industry, making it ready for early market entry.",
+      "For large-scale deployments: fully customized battery solutions with premium features and dedicated support.",
     features: [
-      "Strategic Technical Co-founder",
-      "Comprehensive MVP build",
-      "Personalized Consultation Sessions",
-      "Post-Launch Support and Maintenance",
-      "Iterative Development based on Feedback",
-      "Priority Maintenance and Extended Support"
+      "Custom Battery Architecture",
+      "Ultra-Fast Charging Technology",
+      "Advanced Safety Systems",
+      "Dedicated Support Team",
+      "Custom Integration Services",
+      "Priority Feature Development"
     ],
-    btnText: "Work With Us",
+    btnText: "Contact Sales",
     mostPopular: false,
   },
 ];
@@ -63,15 +63,14 @@ export default function Pricing() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="text-base font-semibold leading-7 text-primary">
-            Pricing
+            Battery Solutions
           </h2>
           <p className="mt-2 text-4xl font-bold tracking-tight text-white sm:text-5xl">
-            Transparent Pricing
+            Choose Your Battery Technology Package
           </p>
         </div>
         <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-300">
-          Use our method to build your startup, or trust us to build your
-          startup with our proven approach.
+          Select the perfect battery solution for your EV charging needs, from basic to enterprise-grade technology.
         </p>
         <div className="isolate mx-auto mt-10 grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           {tiers.map((tier) => (
@@ -105,9 +104,11 @@ export default function Pricing() {
                   <span className="text-4xl font-bold tracking-tight text-white">
                     {tier.price}
                   </span>
-                  <span className="text-sm font-semibold leading-6 text-gray-300">
-                    /project
-                  </span>
+                  {tier.price !== "Custom" && (
+                    <span className="text-sm font-semibold leading-6 text-gray-300">
+                      /year
+                    </span>
+                  )}
                 </p>
               </div>
               <div className="flex-grow">

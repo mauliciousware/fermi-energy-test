@@ -98,12 +98,12 @@ const CarChargingAnimation = () => {
   return (
     <div className="relative" ref={sectionRef}>
       {/* Container for the animation - this will be pinned */}
-      <div className="h-screen w-full flex items-center justify-center bg-gray-200 overflow-hidden">
+      <div className="h-screen w-full flex items-center justify-center bg-gray-800 overflow-hidden">
         <div className="relative w-full max-w-5xl h-64 mx-auto">
           {/* Charging Station - simplified to match the image */}
           <div 
             ref={stationRef} 
-            className="absolute right-16 top-1/2 transform -translate-y-1/2 w-28 h-56 bg-black rounded-md flex flex-col items-center"
+            className="absolute right-16 top-1/2 transform -translate-y-1/2 w-28 h-56 bg-gray-900 rounded-md flex flex-col items-center"
           >
             {/* Indicator lights */}
             <div className="absolute bottom-10 left-6 w-4 h-4 bg-blue-500 rounded-full"></div>
@@ -116,7 +116,7 @@ const CarChargingAnimation = () => {
             ref={plugRef}
             className="absolute right-40 top-1/2 transform -translate-y-1/2 z-20"
           >
-            <div className="w-40 h-2 bg-black"></div>
+            <div className="w-40 h-2 bg-gray-700"></div>
           </div>
           
           {/* Electricity Effect (initially invisible) */}
@@ -140,8 +140,8 @@ const CarChargingAnimation = () => {
               <div className="absolute w-16 h-8 bg-blue-300 top-4 left-6 rounded-sm"></div>
               
               {/* Wheels */}
-              <div className="absolute bottom-0 left-8 w-10 h-10 bg-black rounded-full -mb-3"></div>
-              <div className="absolute bottom-0 right-8 w-10 h-10 bg-black rounded-full -mb-3"></div>
+              <div className="absolute bottom-0 left-8 w-10 h-10 bg-gray-900 rounded-full -mb-3"></div>
+              <div className="absolute bottom-0 right-8 w-10 h-10 bg-gray-900 rounded-full -mb-3"></div>
               
               {/* Green battery indicator */}
               <div className="absolute top-1/2 left-32 w-14 h-3 bg-green-500 rounded-sm"></div>
@@ -153,7 +153,7 @@ const CarChargingAnimation = () => {
               <div className="absolute top-10 right-2 w-3 h-3 bg-red-500 rounded-sm"></div>
               
               {/* Battery level */}
-              <div className="absolute top-1/2 left-32 w-14 h-3 bg-gray-200 rounded-sm overflow-hidden">
+              <div className="absolute top-1/2 left-32 w-14 h-3 bg-gray-700 rounded-sm overflow-hidden">
                 <div 
                   ref={batteryLevelRef} 
                   className="h-full bg-green-500 rounded-sm w-0"

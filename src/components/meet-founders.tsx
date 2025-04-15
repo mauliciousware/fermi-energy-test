@@ -1,17 +1,17 @@
 const people = [
   {
     name: "Zhengrui 'Ray' Xu",
-    role: "Co-Founder",
+    role: "Co-Founder & CEO",
     imageUrl: "img/CEO.png",
-    bio: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem",
+    bio: "With over 15 years of experience in battery technology and renewable energy, Ray leads Fermi Energy's vision to revolutionize EV charging. His expertise in materials science and sustainable energy solutions has been instrumental in developing our patented fast-charging technology.",
     linkedinUrl: "https://www.linkedin.com/in/zhengrui-xu/",
   },
   {
     name: "Feng Lin",
-    role: "Co-Founder",
+    role: "Co-Founder & CTO",
     imageUrl: "img/CTO.png",
-    bio: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem",
-    linkedinUrl: "https://www.linkedin.com/in/zhengrui-xu/",
+    bio: "A pioneer in battery safety systems and thermal management, Feng brings extensive experience in developing advanced energy storage solutions. His work on our multi-layer protection system has set new industry standards for EV battery safety.",
+    linkedinUrl: "https://www.linkedin.com/in/feng-lin/",
   },
   // More people...
 ];
@@ -24,8 +24,7 @@ export default function MeetFounders() {
             Meet the Founders
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-300">
-            We're technical founders with successful exits and a track record of
-            building early-stage startups backed by YCombinator.
+            Leading the charge in sustainable battery technology with decades of combined experience in energy storage and EV solutions.
           </p>
         </div>
         <ul
@@ -50,24 +49,6 @@ export default function MeetFounders() {
                   {person.bio}
                 </p>
                 <div role="list" className="mt-6 flex gap-x-6">
-                  {person.xUrl && (
-                    <div>
-                      <a
-                        href={person.xUrl}
-                        className="text-gray-200 hover:text-primary"
-                      >
-                        <span className="sr-only">X</span>
-                        <svg
-                          className="h-5 w-5"
-                          aria-hidden="true"
-                          fill="currentColor"
-                          viewBox="0 0 20 20"
-                        >
-                          <path d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z" />
-                        </svg>
-                      </a>
-                    </div>
-                  )}
                   {person.linkedinUrl && (
                     <div>
                       <a

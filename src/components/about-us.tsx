@@ -1,24 +1,24 @@
 const features = [
   {
-    name: "Slay School",
+    name: "Fast Charging Technology",
     description:
-      "Backed by YCombinator with over 150k users globally, Slay School is an AI study tool that generates flashcards and quizzes from notes.",
-    href: "https://slayschool.com",
-    icon: "/landing/slayschool-logo.png",
+      "Our patented fast-charging system reduces charging time by up to 50% compared to conventional solutions, making EV charging more efficient and convenient.",
+    href: "/technology/fast-charging",
+    icon: "/landing/fast-charging.png",
   },
   {
-    name: "Fleeting Notes",
+    name: "Sustainable Materials",
     description:
-      "With over 9000 users, Fleeting Notes is a note-taking app specifically designed to take quick notes into Obsidian.",
-    href: "https://fleetingnotes.app",
-    icon: "/landing/fleetingnotes-logo.png",
+      "We use environmentally friendly materials and zero-emission production processes to minimize our environmental impact while maintaining high performance standards.",
+    href: "/technology/sustainability",
+    icon: "/landing/sustainable.png",
   },
   {
-    name: "Event Mate",
+    name: "Advanced Safety Systems",
     description:
-      "EventMate simplifies and streamlines event planning for event planners, non-profits, and organizations.",
-    href: "https://eventmate.ca",
-    icon: "/landing/eventmate-logo.svg",
+      "Multiple layers of protection and advanced thermal management ensure reliable performance and maximum safety in all conditions.",
+    href: "/technology/safety",
+    icon: "/landing/safety.png",
   },
 ];
 
@@ -28,10 +28,10 @@ export default function AboutUs() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Businesses We've Built
+            Our Technology Solutions
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-300">
-            We don’t just write software; we build businesses
+            Revolutionizing EV charging with innovative battery technology
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
@@ -41,9 +41,7 @@ export default function AboutUs() {
                 <dt className="text-base font-semibold leading-7 text-white">
                   <img
                     src={feature.icon}
-                    className={`flex mb-6 rounded-lg h-10 w-10 items-center justify-center ${
-                      feature.name === "Event Mate" ? "bg-white p-1" : ""
-                    }`}
+                    className="flex mb-6 rounded-lg h-10 w-10 items-center justify-center"
                   />
                   {feature.name}
                 </dt>
@@ -55,7 +53,7 @@ export default function AboutUs() {
                       className="text-sm font-semibold leading-6 text-primary"
                       target="_blank"
                     >
-                      Visit Website <span aria-hidden="true">→</span>
+                      Learn More <span aria-hidden="true">→</span>
                     </a>
                   </p>
                 </dd>

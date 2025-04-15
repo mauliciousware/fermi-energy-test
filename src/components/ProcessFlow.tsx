@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 const AnimatedFlowchart = () => {
+  const [isVisible, setIsVisible] = useState(false);
   const [showInputs, setShowInputs] = useState(false);
   const [showArrow1, setShowArrow1] = useState(false);
   const [showProcess1, setShowProcess1] = useState(false);
@@ -12,8 +13,32 @@ const AnimatedFlowchart = () => {
   const [showProcess4, setShowProcess4] = useState(false);
   const [showArrow5, setShowArrow5] = useState(false);
   const [showOutput, setShowOutput] = useState(false);
+  
+  const flowchartRef = useRef(null);
 
   useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect(); // Stop observing once visible
+        }
+      },
+      {
+        threshold: 0.2 // Trigger when 20% of the component is visible
+      }
+    );
+
+    if (flowchartRef.current) {
+      observer.observe(flowchartRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (!isVisible) return; // Don't start animation until component is visible
+
     const timeline = [
       { setter: setShowInputs, delay: 1000 },
       { setter: setShowArrow1, delay: 2500 },
@@ -28,13 +53,15 @@ const AnimatedFlowchart = () => {
       { setter: setShowOutput, delay: 11500 }
     ];
 
-    timeline.forEach(({ setter, delay }) => {
-      setTimeout(() => setter(true), delay);
-    });
-  }, []);
+    const timeouts = timeline.map(({ setter, delay }) => 
+      setTimeout(() => setter(true), delay)
+    );
+
+    return () => timeouts.forEach(timeout => clearTimeout(timeout));
+  }, [isVisible]);
 
   return (
-    <div className="flex flex-col items-center justify-center p-8 bg-surface2 min-h-screen text-gray-50 font-mont">
+    <div ref={flowchartRef} className="flex flex-col items-center justify-center p-8 bg-surface2 min-h-screen text-gray-50 font-mont">
       <div className="w-full max-w-6xl">
         <div className="flex justify-between mb-8">
           <div className="text-xl font-bold text-primary">INPUT</div>

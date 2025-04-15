@@ -20,8 +20,8 @@ export default function Home(): JSX.Element {
       <AboutUs />
       <Testimonial />
       <MeetFounders />
-      <Cta />
       <ProcessFlow />
+      <Cta />
     </Layout>
   );
 }
