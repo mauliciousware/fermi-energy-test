@@ -126,7 +126,7 @@ const config: Config = {
           title: 'Resources',
           items: [
             {
-              label: 'Blog',
+              label: 'News',
               to: '/blog',
             },
           ],

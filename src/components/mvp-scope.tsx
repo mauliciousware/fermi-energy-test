@@ -8,6 +8,7 @@ import {
     BatteryCharging
 } 
 from 'lucide-react';
+import { Globe } from './ui/Globe';
   
   interface Feature {
     title?: string;
@@ -103,17 +104,18 @@ from 'lucide-react';
                         </a>
                     </div>
 
-                    {/* Right Column */}
-                    <div className="h-full flex items-center">
-                        <video
-                            className="w-full h-full object-cover rounded-xl"
-                            src="https://potfolio-website.s3.us-west-1.amazonaws.com/vid1.mp4"
-                            autoPlay
-                            muted
-                            playsInline
-                            loop
-                            controls
-                        />
+                    {/* Right Column - Interactive Globe */}
+                    <div className="h-full min-h-[400px] flex items-center relative rounded-xl overflow-hidden bg-black">
+                        <div className="relative z-20 w-full h-full">
+                            <div className="w-full h-full">
+                                <Globe />
+                            </div>
+                            <div className="absolute bottom-4 left-0 right-0 text-center text-white text-sm z-30">
+                                <p className="px-4 py-2 bg-black/60 backdrop-blur-sm rounded-full inline-block border border-white/20">
+                                    Global Distribution Network
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
