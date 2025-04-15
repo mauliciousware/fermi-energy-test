@@ -8,11 +8,13 @@ import ValueProp from "../components/value-prop";
 import Testimonial from "../components/testimonial";
 import MVPScope from "../components/mvp-scope";
 import ProcessFlow from "../components/ProcessFlow"
+import { Analytics } from "@vercel/analytics/react"
 
 export default function Home(): JSX.Element {
 
   return (
     <Layout title="Home" description="The World's Most Transparent Dev Agnecy">
+      <Analytics/>
       <HeroHome />
       <ValueProp />
       <Pricing />
