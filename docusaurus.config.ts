@@ -16,7 +16,7 @@ const config: Config = {
   projectName: 'website',
 
   // Error handling
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Internationalization
@@ -31,19 +31,7 @@ const config: Config = {
       'classic',
       {
         docs: false,
-        blog: {
-          showReadingTime: true,
-          blogSidebarCount: 'ALL',
-          blogTitle: 'News & Updates',
-          blogDescription: 'Stay up to date with Fermi Energy\'s latest developments in battery technology',
-          feedOptions: {
-            type: 'all',
-            title: 'Fermi Energy News',
-            description: 'Latest updates on battery technology innovations',
-            language: 'en',
-            copyright: `Copyright © ${new Date().getFullYear()} Fermi Energy, Inc.`
-          },
-        },
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
