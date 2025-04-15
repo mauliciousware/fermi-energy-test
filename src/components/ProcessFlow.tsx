@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Battery, Cpu, Boxes, ArrowDownToLine, SplitSquareVertical, Recycle, Beaker, Box } from 'lucide-react';
 
 const AnimatedFlowchart = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -76,7 +77,9 @@ const AnimatedFlowchart = () => {
                 showInputs ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
               }`}
             >
-              <div className="h-24 bg-neutral rounded mb-2"></div>
+              <div className="h-24 bg-neutral rounded mb-2 flex items-center justify-center">
+                <Battery className="w-16 h-16 text-primary" />
+              </div>
               <div className="text-xs text-center font-bold">BATTERIES, BATTERY PACKS & REUSABLE SCRAP</div>
             </div>
             
@@ -85,7 +88,9 @@ const AnimatedFlowchart = () => {
                 showInputs ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
               }`}
             >
-              <div className="h-24 bg-neutral rounded mb-2"></div>
+              <div className="h-24 bg-neutral rounded mb-2 flex items-center justify-center">
+                <Cpu className="w-16 h-16 text-primary" />
+              </div>
               <div className="text-xs text-center font-bold">CONSUMER ELECTRONICS</div>
             </div>
           </div>
@@ -109,7 +114,9 @@ const AnimatedFlowchart = () => {
                 showProcess1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
               }`}
             >
-              <div className="h-24 bg-neutral rounded mb-2"></div>
+              <div className="h-24 bg-neutral rounded mb-2 flex items-center justify-center">
+                <ArrowDownToLine className="w-16 h-16 text-primary" />
+              </div>
               <div className="text-xs text-center font-bold">COLLECTION & RECEIPT</div>
             </div>
           </div>
@@ -133,7 +140,9 @@ const AnimatedFlowchart = () => {
                 showProcess2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
               }`}
             >
-              <div className="h-24 bg-neutral rounded mb-2"></div>
+              <div className="h-24 bg-neutral rounded mb-2 flex items-center justify-center">
+                <SplitSquareVertical className="w-16 h-16 text-primary" />
+              </div>
               <div className="text-xs text-center font-bold">STORAGE & SEPARATION</div>
             </div>
           </div>
@@ -157,7 +166,9 @@ const AnimatedFlowchart = () => {
                 showProcess3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
               }`}
             >
-              <div className="h-24 bg-neutral rounded mb-2"></div>
+              <div className="h-24 bg-neutral rounded mb-2 flex items-center justify-center">
+                <Recycle className="w-16 h-16 text-primary" />
+              </div>
               <div className="text-xs text-center font-bold">RECYCLING</div>
             </div>
           </div>
@@ -181,7 +192,9 @@ const AnimatedFlowchart = () => {
                 showProcess4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
               }`}
             >
-              <div className="h-24 bg-neutral rounded mb-2"></div>
+              <div className="h-24 bg-neutral rounded mb-2 flex items-center justify-center">
+                <Beaker className="w-16 h-16 text-primary" />
+              </div>
               <div className="text-xs text-center font-bold">REFINING</div>
             </div>
           </div>
@@ -205,7 +218,9 @@ const AnimatedFlowchart = () => {
                 showOutput ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
               }`}
             >
-              <div className="h-24 bg-neutral rounded mb-2"></div>
+              <div className="h-24 bg-neutral rounded mb-2 flex items-center justify-center">
+                <Box className="w-16 h-16 text-primary" />
+              </div>
               <div className="text-xs text-center font-bold">BATTERY MATERIALS</div>
             </div>
           </div>

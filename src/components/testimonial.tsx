@@ -13,21 +13,21 @@ interface Testimonial {
 
 const testimonials = [
   {
-    img: '/img/ev-manufacturer.png',
+    img: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200&h=200&auto=format&fit=crop',
     quote: "Fermi Energy's battery technology has revolutionized our EV charging infrastructure. Their fast-charging solution has reduced our charging times by 50% while maintaining exceptional safety standards. The sustainable materials used in their batteries align perfectly with our environmental goals.",
     name: 'Sarah Chen',
     role: 'CTO, GreenDrive Motors',
     project: 'EV Manufacturing'
   },
   {
-    img: '/img/charging-network.png',
+    img: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=200&h=200&auto=format&fit=crop',
     quote: "Implementing Fermi Energy's battery solutions across our charging network has been a game-changer. The advanced thermal management system ensures reliable performance even in extreme conditions, and our customers have noticed a significant improvement in charging efficiency.",
     name: 'Michael Rodriguez',
     role: 'Director of Operations, ChargePoint Network',
     project: 'Charging Infrastructure'
   },
   {
-    img: '/img/energy-company.png',
+    img: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=200&h=200&auto=format&fit=crop',
     quote: "As a renewable energy provider, we're always looking for sustainable solutions. Fermi Energy's battery technology not only meets our high standards for environmental impact but also delivers superior performance. Their commitment to zero-emission production processes sets them apart in the industry.",
     name: 'Dr. Emily Thompson',
     role: 'Head of Innovation, CleanPower Solutions',

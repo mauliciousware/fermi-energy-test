@@ -4,21 +4,21 @@ const features = [
     description:
       "Our patented fast-charging system reduces charging time by up to 50% compared to conventional solutions, making EV charging more efficient and convenient.",
     href: "/technology/fast-charging",
-    icon: "/landing/fast-charging.png",
+    icon: "https://api.iconify.design/mdi:battery-charging-high.svg?color=%234ade80&width=100&height=100",
   },
   {
     name: "Sustainable Materials",
     description:
       "We use environmentally friendly materials and zero-emission production processes to minimize our environmental impact while maintaining high performance standards.",
     href: "/technology/sustainability",
-    icon: "/landing/sustainable.png",
+    icon: "https://api.iconify.design/mdi:leaf-circle.svg?color=%234ade80&width=100&height=100",
   },
   {
     name: "Advanced Safety Systems",
     description:
       "Multiple layers of protection and advanced thermal management ensure reliable performance and maximum safety in all conditions.",
     href: "/technology/safety",
-    icon: "/landing/safety.png",
+    icon: "https://api.iconify.design/mdi:shield-check.svg?color=%234ade80&width=100&height=100",
   },
 ];
 
@@ -41,7 +41,8 @@ export default function AboutUs() {
                 <dt className="text-base font-semibold leading-7 text-white">
                   <img
                     src={feature.icon}
-                    className="flex mb-6 rounded-lg h-10 w-10 items-center justify-center"
+                    alt={feature.name}
+                    className="mb-6 rounded-lg h-12 w-12 p-1 bg-gray-800"
                   />
                   {feature.name}
                 </dt>

@@ -132,7 +132,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} DevToDollars`,
+      copyright: `Copyright © ${new Date().getFullYear()} Fermi Energy`,
     },
     prism: {
       theme: prismThemes.github,

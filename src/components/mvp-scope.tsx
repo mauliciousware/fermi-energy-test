@@ -107,7 +107,7 @@ from 'lucide-react';
                     <div className="h-full flex items-center">
                         <video
                             className="w-full h-full object-cover rounded-xl"
-                            src="/video/battery-tech-demo.mp4"
+                            src="https://potfolio-website.s3.us-west-1.amazonaws.com/vid1.mp4"
                             autoPlay
                             muted
                             playsInline
