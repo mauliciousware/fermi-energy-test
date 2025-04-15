@@ -88,6 +88,11 @@ const config: Config = {
       },
       items: [
         {
+          to: '/news',
+          label: 'News',
+          position: 'right',
+        },
+        {
           to: '/dashboard', 
           label: 'Dashboard',
           position: 'right',
