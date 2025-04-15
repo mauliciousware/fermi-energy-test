@@ -96,7 +96,7 @@ import { Globe } from './ui/Globe';
                             </div>
                         </div>
                         <a 
-                            href="/technology" 
+                            href="/dummyPage"
                             className="flex items-center justify-center text-green-400 hover:text-green-300 transition-colors no-underline mt-auto"
                         >
                             <span className="text-lg font-semibold no-underline">Learn More</span>

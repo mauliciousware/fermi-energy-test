@@ -20,8 +20,16 @@ export default function Home(): JSX.Element {
       <AboutUs />
       <Testimonial />
       <MeetFounders />
-      <ProcessFlow />
-      <Cta />
+      
+      {/* Hide ProcessFlow on mobile (screens smaller than md) */}
+      <div className="hidden md:block">
+        <ProcessFlow />
+      </div>
+      
+      {/* Hide Cta on mobile (screens smaller than md) */}
+      <div className="hidden md:block">
+        <Cta />
+      </div>
     </Layout>
   );
 }

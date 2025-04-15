@@ -99,7 +99,6 @@ const config: Config = {
         src: 'img/LOGO.png',
       },
       items: [
-        { to: '/blog', label: 'News', position: 'left' },
         {
           to: '/dashboard', 
           label: 'Dashboard',
@@ -125,10 +124,6 @@ const config: Config = {
         {
           title: 'Resources',
           items: [
-            {
-              label: 'News',
-              to: '/blog',
-            },
           ],
         },
       ],

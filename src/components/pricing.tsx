@@ -4,7 +4,7 @@ const tiers = [
   {
     name: "Starter Pack",
     id: "starter",
-    href: "/contact",
+    href: "/dummyPage",
     price: "$0",
     description: "Get started with our basic battery technology solutions",
     features: [
@@ -19,7 +19,7 @@ const tiers = [
   {
     name: "Professional",
     id: "professional",
-    href: "/contact",
+    href: "/dummyPage",
     price: "$50,000",
     description:
       "Perfect for EV manufacturers: advanced battery technology with fast charging capabilities and comprehensive support.",
@@ -36,7 +36,7 @@ const tiers = [
   {
     name: "Enterprise",
     id: "enterprise",
-    href: "/contact",
+    href: "/dummyPage",
     price: "Custom",
     description:
       "For large-scale deployments: fully customized battery solutions with premium features and dedicated support.",

@@ -3,21 +3,21 @@ const features = [
     name: "Fast Charging Technology",
     description:
       "Our patented fast-charging system reduces charging time by up to 50% compared to conventional solutions, making EV charging more efficient and convenient.",
-    href: "/technology/fast-charging",
+    href: "/dummyPage",
     icon: "https://api.iconify.design/mdi:battery-charging-high.svg?color=%234ade80&width=100&height=100",
   },
   {
     name: "Sustainable Materials",
     description:
       "We use environmentally friendly materials and zero-emission production processes to minimize our environmental impact while maintaining high performance standards.",
-    href: "/technology/sustainability",
+    href: "/dummyPage",
     icon: "https://api.iconify.design/mdi:leaf-circle.svg?color=%234ade80&width=100&height=100",
   },
   {
     name: "Advanced Safety Systems",
     description:
       "Multiple layers of protection and advanced thermal management ensure reliable performance and maximum safety in all conditions.",
-    href: "/technology/safety",
+    href: "/dummyPage",
     icon: "https://api.iconify.design/mdi:shield-check.svg?color=%234ade80&width=100&height=100",
   },
 ];

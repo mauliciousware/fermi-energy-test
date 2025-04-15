@@ -47,7 +47,7 @@ export default function HeroHome() {
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <a
-              href="https://cal.com/amirali-tabrizi/30min"
+              href="#"
               className="rounded-md bg-primary px-5 py-3 text-md font-semibold text-black shadow-sm hover:bg-primary/80 hover:text-black hover:no-underline"
             >
               Schedule a Demo

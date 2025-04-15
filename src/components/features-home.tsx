@@ -93,7 +93,7 @@ export default function FeaturesHome() {
                   >
                     <div className="relative inline-flex flex-col gap-8 items-center">
                       <img className="lg:max-w-lg sm:max-w-xs mx-auto rounded" src="img/fast-charging.png" alt="Fast Charging Technology" />
-                      <a className="btn text-white bg-gray-800 hover:bg-gray-900 hover:text-white mb-4 sm:w-auto sm:mb-0 hover:no-underline" target="_blank" href="/technology/fast-charging">Learn More</a>
+                      <a className="btn text-white bg-gray-800 hover:bg-gray-900 hover:text-white mb-4 sm:w-auto sm:mb-0 hover:no-underline" target="_blank" href="/dummyPage">Learn More</a>
                     </div>
                   </Transition>
                   {/* Item 2 */}
@@ -111,7 +111,7 @@ export default function FeaturesHome() {
                   >
                     <div className="relative inline-flex flex-col gap-8 items-center">
                       <img className="lg:max-w-lg sm:max-w-xs mx-auto rounded" src="img/sustainable-materials.png" alt="Sustainable Materials" />
-                      <a className="btn text-white bg-gray-800 hover:bg-gray-900 hover:text-white mb-4 sm:w-auto sm:mb-0 hover:no-underline" target="_blank" href="/technology/sustainability">View Details</a>
+                      <a className="btn text-white bg-gray-800 hover:bg-gray-900 hover:text-white mb-4 sm:w-auto sm:mb-0 hover:no-underline" target="_blank" href="/dummyPage">View Details</a>
                     </div>
                   </Transition>
                   {/* Item 3 */}
@@ -129,7 +129,7 @@ export default function FeaturesHome() {
                   >
                     <div className="relative inline-flex flex-col gap-8 items-center">
                       <img className="lg:max-w-lg sm:max-w-xs mx-auto rounded" src="img/safety-systems.png" alt="Safety Systems" />
-                      <a className="btn text-white bg-gray-800 hover:bg-gray-900 hover:text-white mb-4 sm:w-auto sm:mb-0 hover:no-underline" target="_blank" href="/technology/safety">Safety Features</a>
+                      <a className="btn text-white bg-gray-800 hover:bg-gray-900 hover:text-white mb-4 sm:w-auto sm:mb-0 hover:no-underline" target="_blank" href="/dummyPage">Safety Features</a>
                     </div>
                   </Transition>
                 </div>
