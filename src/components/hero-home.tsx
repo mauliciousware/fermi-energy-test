@@ -1,17 +1,41 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 export default function HeroHome() {
-  const [stars, setStars] = useState(null);
+  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (video) {
+      video.load();
+      
+      const handleCanPlay = () => {
+        setIsVideoLoaded(true);
+        video.play().catch(error => {
+          console.log("Video autoplay failed:", error);
+        });
+      };
+
+      video.addEventListener('canplay', handleCanPlay);
+      return () => {
+        video.removeEventListener('canplay', handleCanPlay);
+      };
+    }
+  }, []);
 
   return (
     <section className="relative isolate pt-14 min-h-screen">
       <div className="absolute inset-0 -z-10 w-full h-full">
+        {!isVideoLoaded && (
+          <div className="absolute inset-0 bg-black" />
+        )}
         <video
+          ref={videoRef}
           autoPlay
           loop
           muted
           playsInline
-          className="w-full h-full object-cover opacity-90"
+          className={`w-full h-full object-cover opacity-90 ${isVideoLoaded ? 'visible' : 'invisible'}`}
         >
           <source src="https://potfolio-website.s3.us-west-1.amazonaws.com/videoFermi.mp4" type="video/mp4" />
           Your browser does not support the video tag.
